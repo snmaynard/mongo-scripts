@@ -8,7 +8,7 @@
 #
 # OPTIONAL PARAMS
 # split_min: The minimum number of splits required in a chunk to actually split it (default: 10)
-# The address and port of the mongos (default: "localhost:27017")
+# mongos: The address and port of the mongos (default: "localhost:27017")
 #
 def split_chunks(db, collection, key_pattern, shard, primary_mongod, split_min = 10, mongos = "localhost:27017")
   ns = "#{db}.#{collection}"
