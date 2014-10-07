@@ -20,10 +20,10 @@ This script allows you to split your chunks on a single shard. Useful when a sha
 
 `split_chunks(db, collection, key_pattern, shard, primary_mongod, split_min = 10, mongos = "localhost:27017")`
 
-`db`: The database name to split chunks in
-`collection`: The collection to split chunks in
-`key_pattern`: The key pattern used to shard the collection, i.e. {"_id" => 1}
-`shard`: The id of the shard to split chunks on (check sh.status())
-`primary_mongod`: The address and port of the mongod i.e. "mongo.example.com:27017"
-`split_min`: The minimum number of splits required in a chunk to actually split it - optional
-`mongos`: The address and port of the mongos - optional
+- `db`: The database name to split chunks in
+- `collection`: The collection to split chunks in
+- `key_pattern`: The key pattern used to shard the collection, i.e. {"_id" => 1}
+- `shard`: The id of the shard to split chunks on (check sh.status())
+- `primary_mongod`: The address and port of the mongod i.e. "mongo.example.com:27017"
+- `split_min`: The minimum number of splits required in a chunk to actually split it - optional
+- `mongos`: The address and port of the mongos - optional
